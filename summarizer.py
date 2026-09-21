@@ -1,12 +1,7 @@
 """
 summarizer.py
 تلخيص كل قسم من الورقة البحثية لحاله باستخدام خوارزمية TextRank
-(استخراجية - Extractive)، بدل الاعتماد الكامل على LLM API جاهزة.
-
-TextRank ببساطة: يبني رسم بياني (graph) من الجمل، ويحسب مدى تشابه
-كل جملة بالباقي، ثم يختار الجمل "المركزية" الأكثر تمثيلاً للنص —
-نفس فكرة PageRank بس على مستوى الجمل بدل صفحات الويب.
-"""
+(استخراجية - Extractive)، بدل الاعتماد الكامل على LLM API جاهزة
 
 import textstat
 from sumy.parsers.plaintext import PlaintextParser
